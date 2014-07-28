@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "statement": "What is Big O?",
+    "imgUrl": ""
+  },
+  {
+    "id": 2,
+    "statement": "Simply put, Big O is a way to measure the efficiency of an algorithm. Or, it could show how the time of an algorithm increases as the size of the input increases.",
+    "imgUrl": ""
+  },
+  {
+    "id": 3,
+    "statement": "There are several ways to describe execution time with Big O notation. Pretend that a professor is at the front of a lecture hall, and asks, 'Who has my pen?'",
+    "imgUrl": ""
+  }
+]

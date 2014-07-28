@@ -1,0 +1,63 @@
+/****** overall styling ******/
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+/****** navbar styling ******/
+
+
+
+/****** splash page styling ******/
+
+#greeting {
+  /*margin: 0 auto;*/
+}
+
+#enter-button {
+  margin: 0 auto;
+  display: block;
+}
+
+/****** all lessons page  *****/
+
+#choose-lesson-button {
+  display: block;
+  margin: 0 auto;
+}
+
+/****** lesson styling  *****/
+
+#lessonDiv {
+  position: relative;
+  width: 80%;
+  height: 40%;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+#lessonImg {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#nextButton {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+#previousButton {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}

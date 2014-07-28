@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "statement": "What are algorithms?",
+    "imgUrl": "public/images/question_mark.png"
+  },
+  {
+    "id": 2,
+    "statement": "An algorithm is just a set of steps to solve a problem.",
+    "imgUrl": ""
+  },
+  {
+    "id": 3,
+    "statement": "That means that even the simplest equation is an algorithm!",
+    "imgUrl": "public/images/xplusy.png"
+  },
+  {
+    "id": 4,
+    "statement": "Why are algorithms important?",
+    "imgUrl": ""
+  },
+  {
+    "id": 5,
+    "statement": "There are, of course, many ways to solve a probem. However, which method will be the most efficient? What is the fastest? What uses the least amount of memory?",
+    "imgUrl": ""
+  },
+  {
+    "id": 6,
+    "statement": "The algorithm you choose could mean the different of your program running in milliseconds to running in hours, even.",
+    "imgUrl": ""
+  },
+  {
+    "id": 7,
+    "statement": "IRL, that could mean the difference of millions of dollars if your program can't handle its workload.",
+    "imgUrl": ""
+  }
+]
+
+
+
+

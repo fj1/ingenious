@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Intro to Algorithms",
+    "url": "./json_lessons/algorithm_intro.json"
+  },
+  {
+    "id": 2,
+    "name": "Big O",
+    "url": "./json_lessons/bigO_lesson.json"
+  }
+]
