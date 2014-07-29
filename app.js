@@ -1,7 +1,9 @@
 var app = angular.module('myApp', ['ngRoute']);
 
 app.controller('AppController', ['$scope', '$location', function($scope, $location) {
-  angular.element(document).ready(function(){});
+  // allows us to decide which pages to show navbar
+  $scope.showNavbar = true;
+
   $scope.go = function(path){
     console.log("Going to: ", path)
     $location.path(path);
@@ -26,6 +28,7 @@ app.config(function($routeProvider) {
 });
 
 app.controller('AllLessonsController', ['$scope', '$http', function($scope, $http) {
+  $scope.$parent.showNavbar = false;
   $http.get('./json_lessons/all_lessons.json').success(function(allLessonsData){
     $scope.allLessons = allLessonsData;
   });
@@ -33,13 +36,13 @@ app.controller('AllLessonsController', ['$scope', '$http', function($scope, $htt
 
 app.controller('LessonsController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
   $scope.currentLesson = 1;
+  $scope.$parent.showNavbar = false;
   $scope.nextLesson = function() {
     $scope.currentLesson++;
   };
   $scope.previousLesson = function() {
     $scope.currentLesson--;
   };
-  // console.log("the $routeParams.id is " + $routeParams.id);
   $http.get('/json_lessons/' + $routeParams.id + '.json', { cache: false }).success(function(lessonData){
     $scope.lessons = lessonData;
   });

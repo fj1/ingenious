@@ -1,10 +1,13 @@
+
+
 <div ng-controller="LessonsController" id="lessonDiv">
   <div ng-repeat="lesson in lessons">
     <div ng-show="lesson.id === currentLesson">
-      <h3>{{lesson.statement}}</h3>
+      <p>{{lesson.statement}}</p>
       <img id="lessonImg" src="{{lesson.imgUrl}}"/>
       <button ng-show="!$first" ng-click="previousLesson()" id="previousButton">Previous</button>
       <button ng-show="!$last" ng-click="nextLesson()" id="nextButton">Next</button>
+      <button ng-show="$last" ng-click="go('/lessons')" id="lastButton">Done!</button>
     </div>
   </div>
 </div>
