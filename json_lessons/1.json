@@ -2,7 +2,7 @@
   {
     "id": 1,
     "statement": "What are algorithms?",
-    "imgUrl": "public/images/question_mark.png"
+    "imgUrl": "public/images/alegreya-question-mark.png"
   },
   {
     "id": 2,
@@ -21,17 +21,17 @@
   },
   {
     "id": 5,
-    "statement": "There are, of course, many ways to solve a probem. However, which method will be the most efficient? What is the fastest? What uses the least amount of memory?",
+    "statement": "There are, of course, many ways to solve a problem. However, which method will be the most efficient? What is the fastest? What uses the least amount of memory?",
     "imgUrl": ""
   },
   {
     "id": 6,
-    "statement": "The algorithm you choose could mean the different of your program running in milliseconds to running in hours, even.",
+    "statement": "The algorithm you choose could mean the difference of your program running in milliseconds to running in hours, even.",
     "imgUrl": ""
   },
   {
     "id": 7,
-    "statement": "IRL, that could mean the difference of millions of dollars if your program can't handle its workload.",
+    "statement": "In real life, that could mean the difference of millions of dollars if your program can't handle its workload.",
     "imgUrl": ""
   }
 ]

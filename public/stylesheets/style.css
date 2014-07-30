@@ -11,16 +11,17 @@ body {
   -o-background-size: cover;
 }
 
-/*button {
+button {
   padding: 5px 15px 5px 15px;
   color: black;
   background-color: #00A47F;
   border-radius: 5%;
-  font-size: 2em;
   border: none;
   box-shadow: 2px 2px 1px 1px #2F4F4F;
   font-weight: 400;  
-}*/
+  /* modularizing font-size didn't work (bootstrap?) */
+  /*font-size: 2em;*/
+}
 
 /****** navbar styling ******/
 
@@ -43,8 +44,8 @@ a:hover {
   font-size: 1.5em !important;
 }
 
-#home-icon {
-  
+img #home-icon {
+  padding-bottom: 13px;
 }
 
 /****** splash page styling ******/
@@ -71,13 +72,10 @@ a:hover {
 #greeting #enter-button {
   margin: 0 auto;
   display: block;
-  padding: 5px 15px 5px 15px;
-  color: black;
-  background-color: #00A47F;
-  border-radius: 5%;
   font-size: 2em;
-  border: none;
-  box-shadow: 2px 2px 1px 1px #2F4F4F;
+  /* button styling didn't affect this button's color */
+  color: black;
+  /* button styling didn't affect this button's font-weight */
   font-weight: 400;
 }
 
@@ -91,14 +89,7 @@ a:hover {
   display: block;  
   margin: 0 auto;
   margin-top: 3em;
-  padding: 5px 15px 5px 15px;
-  color: black;
-  background-color: #00A47F;
-  border-radius: 5%;
   font-size: 2em;
-  border: none;
-  box-shadow: 2px 2px 1px 1px #2F4F4F;
-  font-weight: 400;
 }
 
 #choose-lesson-button:hover {
@@ -111,16 +102,19 @@ a:hover {
   background-image: url('../images/mochaGrunge.png');
   position: relative;
   max-width: 75%;
-  height: 545px;
+  height: 575px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   box-shadow: 2px 2px 1px 1px #2F4F4F;
 }
 
 #lessonDiv p {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
   color: #373733;
+  vertical-align: center;
 }
 
 #lessonImg {
@@ -128,22 +122,15 @@ a:hover {
   max-height: 80%;
 }
 
-#nextButton {
+#nextButton, #lastButton {
   position: absolute;
   bottom: 5px;
   right: 10px;
   margin-top: 3em;
-  padding: 5px 15px 5px 15px;
-  color: black;
-  background-color: #00A47F;
-  border-radius: 5%;
   font-size: 2em;
-  border: none;
-  box-shadow: 2px 2px 1px 1px #2F4F4F;
-  font-weight: 400;
 }
 
-#nextButton:hover {
+#nextButton:hover, #previousButton:hover, #lastButton:hover {
   background-color: #007158;
 }
 
@@ -152,37 +139,7 @@ a:hover {
   bottom: 5px;
   left: 10px;
   margin-top: 3em;
-  padding: 5px 15px 5px 15px;
-  color: black;
-  background-color: #00A47F;
-  border-radius: 5%;
   font-size: 2em;
-  border: none;
-  box-shadow: 2px 2px 1px 1px #2F4F4F;
-  font-weight: 400;
-}
-
-#previousButton:hover {
-  background-color: #007158;
-}
-
-#lastButton {
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
-  margin-top: 3em;
-  padding: 5px 15px 5px 15px;
-  color: black;
-  background-color: #00A47F;
-  border-radius: 5%;
-  font-size: 2em;
-  border: none;
-  box-shadow: 2px 2px 1px 1px #2F4F4F;
-  font-weight: 400;  
-}
-
-#lastButton:hover {
-  background-color: #007158;
 }
 
 

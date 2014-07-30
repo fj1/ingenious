@@ -2,16 +2,77 @@
   {
     "id": 1,
     "statement": "What is Big O?",
-    "imgUrl": "public/images/bigo-o(n).png"
+    "imgUrl": "public/images/alegreya-question-mark.png"
   },
   {
     "id": 2,
-    "statement": "Simply put, Big O is a way to measure the efficiency of an algorithm. Or, it could show how the time of an algorithm increases as the size of the input increases.",
+    "statement": "Simply put, Big O is a way to measure the efficiency of an algorithm. We use it to show how the time of an algorithm increases as the size of the input increases. Big O notation considers the worst case scenario of solving a problem.",
     "imgUrl": ""
   },
   {
     "id": 3,
-    "statement": "There are several ways to describe execution time with Big O notation. Pretend that a professor is at the front of a lecture hall, and asks, 'Who has my pen?'",
+    "statement": "There are several ways to describe execution time with Big O notation. We’ll be using the following example scenario: A professor is at the front of a lecture hall, and asks, 'Who has my pen?'",
+    "imgUrl": ""
+  },
+  {
+    "id": 4,
+    "statement": "O(n) means that the performance of the algorithm will increase linearly and in proportion to the size of the data set.",
+    "imgUrl": "public/images/bigo-o(n).png"
+  },
+  {
+    "id": 5,
+    "statement": "In our example scenario, the professor must ask each student individually if they have the pen. In the worst case scenario, he asks every single student before finding the pen with the last student; if there are 15 students, he would have asked 15 times.",
+    "imgUrl": "public/images/bigo-o(n).png"
+  },
+  {
+    "id": 6,
+    "statement": "In the best case, the first student he asks will have the pen. Best cases do not determine O(n), but it’s still useful to know about them.",
+    "imgUrl": ""
+  },
+  {
+    "id": 7,
+    "statement": "O(2^n) is an algorithm whose growth will double with each additional element in the input data set.",
+    "imgUrl": "public/images/bigo-o(n)-o(2^n).png"
+  },
+  {
+    "id": 8,
+    "statement": "The professor asks the first student, ‘Does Mike have the pen? Does July have the pen?’ etc until he asks about all the students in the room. If the first student doesn’t know, then the professor repeats the process with the second student, and so on, until each student is asked about every other student in the room.",
+    "imgUrl": "public/images/bigo-o(n)-o(2^n).png"
+  },
+  {
+    "id": 9,
+    "statement": "In our scenario, if there are 15 students in the room, in the worst case the professor will ask 32768 times who has his pen!",
+    "imgUrl": ""
+  },
+  {
+    "id": 10,
+    "statement": "O(log n) might be best shown with our example. Our fictional professor divides the class in two, and asks ‘is the pen on the left side or the right side of the room?’ If it’s on the right side, then the professor asks which half of the right side has the pen, and so on until the pen is found.",
+    "imgUrl": "public/images/bigo-o(n)-o(2^n)-o(logn).png"
+  },
+  {
+    "id": 11,
+    "statement": "For 15 students, the professor will ask less than 2 questions! 1.176 questions",
+    "imgUrl": "public/images/bigo-o(n)-o(2^n)-o(logn).png"
+  },
+  {
+    "id": 12,
+    "statement": "O(1) means that, regardless of the size of the data set, the algorithm will always execute in the same amount of time.",
+    "imgUrl": "public/images/bigo-o(n)-o(2^n)-o(logn)-o(1).png"
+  },
+  {
+    "id": 13,
+    "statement": "In other words, the professor exclaims ‘Oh hey, I have my pen!'",
     "imgUrl": ""
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
