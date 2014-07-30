@@ -17,6 +17,10 @@ app.config(function($routeProvider) {
       templateUrl: 'public/views/greeting.html',
       controller: 'AppController'
     })
+    .when('/user', {
+      templateUrl: 'public/views/user.html',
+      controller: 'UserController'
+    })
     .when('/lessons', {
       templateUrl: 'public/views/all_lessons.html',
       controller: 'AllLessonsController'

@@ -1,13 +1,12 @@
 <div ng-controller="UserController" id="userDiv">
   <h1>Welcome! What's your name?</h1>
   <form name="usernameForm">
-  
-    <textarea ng-model="UserController.username.body"></textarea>
-  
+    <input name="userInput" class="userinput" type="text" ng-model="UserController.username" required ng-minlength=1 />
+    <h1 ng-hide="usernameForm.userInput.$pristine">Hello, {{UserController.username}}!</h1>
   </form>
+  <button ng-click="go('/lessons')" ng-hide="usernameForm.userInput.$pristine">I'm ready!</button>
 </div>
 
 <!-- desirables -->
 <!-- check for validity -->
-<!-- live update to say 'hello, username' -->
 <!-- add to local storage -->

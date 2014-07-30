@@ -83,6 +83,41 @@ img #home-icon {
   background-color: #007158;
 }
 
+/****** user page  *****/
+
+#userDiv {
+  margin: 0 auto;
+  margin-top: 10em;
+  text-align: center;
+  color: #a2a7ab;
+  text-shadow: 2px 2px 1px #2F4F4F;
+}
+
+.userinput {
+  margin-top: 2em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* NOT WORKING YET */
+/*.ng-pristine {
+  border-color: #007158 !important;
+}
+
+.ng-valid {
+  border-color: #00f1ba !important;
+}*/
+
+#userDiv button {
+  margin-top: 1em;
+  /* button styling didn't affect this button's color */
+  color: black;
+  /* button styling didn't affect this button's font-weight */
+  font-weight: 400;
+  /* button styling didn't affect this button's font-size */
+  font-size: 2em;
+}
+
 /****** all lessons page  *****/
 
 #choose-lesson-button {
