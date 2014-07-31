@@ -3,6 +3,7 @@ var app = angular.module('myApp', ['ngRoute', 'LocalStorageModule']);
 app.controller('AppController', ['$scope', '$location', '$rootScope', '$http', 'localStorageService', function($scope, $location, $rootScope, $http, localStorageService) {
   // allows us to decide which pages to show navbar
   $scope.showNavbar = true;
+  // routing when buttons are clicked
   $scope.go = function(path){
     console.log("Going to: ", path)
     $location.path(path);
@@ -15,9 +16,13 @@ app.controller('AppController', ['$scope', '$location', '$rootScope', '$http', '
       $scope.go('/user');
     }
   };
+  // getting allLessonsData
   $http.get('../json_lessons/all_lessons.json', { cache: false }).success(function(allLessonsData){
     $rootScope.allLessonsData = allLessonsData;
   });
+
+  // for setting the body background image to the lightbulb wallpaper
+  document.body.classList.remove('no-image')
 }]);
 
 // for angular routes
