@@ -25,10 +25,6 @@ button {
 
 /****** navbar styling ******/
 
-.home-icon {
-  background-color: #777;
-}
-
 .navbar.navbar-default {
   background-color: transparent;
   background: transparent;
@@ -42,10 +38,6 @@ a:hover {
 
 .navbar-brand, .navbar-right {
   font-size: 1.5em !important;
-}
-
-img #home-icon {
-  padding-bottom: 13px;
 }
 
 /****** splash page styling ******/

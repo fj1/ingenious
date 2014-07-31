@@ -1,13 +1,23 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute', 'LocalStorageModule']);
 
-app.controller('AppController', ['$scope', '$location', function($scope, $location) {
+app.controller('AppController', ['$scope', '$location', '$rootScope', '$http', 'localStorageService', function($scope, $location, $rootScope, $http, localStorageService) {
   // allows us to decide which pages to show navbar
   $scope.showNavbar = true;
-
   $scope.go = function(path){
     console.log("Going to: ", path)
     $location.path(path);
   };
+  $scope.goIfNameSet = function() {
+    var name = localStorageService.get('name');
+    if (name) {
+      $scope.go('/lessons');
+    } else {
+      $scope.go('/user');
+    }
+  };
+  $http.get('../json_lessons/all_lessons.json', { cache: false }).success(function(allLessonsData){
+    $rootScope.allLessonsData = allLessonsData;
+  });
 }]);
 
 // for angular routes
@@ -27,7 +37,7 @@ app.config(function($routeProvider) {
     })
     .when('/lessons/:id', {
       templateUrl: 'public/views/lesson_view.html',
-      controller: 'LessonsController'
+      controller: 'LessonController'
     })
 });
 

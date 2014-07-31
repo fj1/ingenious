@@ -1,6 +1,10 @@
-<div ng-controller="LessonsController" id="lessonDiv">
+<div ng-controller="LessonController" id="lessonDiv">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="{{(currentSlide / lessonLength) * 100}}" aria-valuemin="0" aria-valuemax="100" style="width: {{(currentSlide / lessonLength) * 100}}%;">
+    </div>
+  </div>
   <div ng-repeat="lesson in lessons">
-    <div ng-show="lesson.id === currentLesson">
+    <div ng-show="lesson.id === currentSlide">
       <p>{{lesson.statement}}</p>
       <!-- possible ways to center lesson.statement -->
       <!-- ng-attr-class='{{ boolean }}' -->
