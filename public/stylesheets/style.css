@@ -12,7 +12,7 @@ body {
 }
 
 body.no-image {
-  background-image: url("../images/dark_wall.png");
+  background-image: url("../images/dark_wall.png") no-repeat center center fixed;
 }
 
 button {

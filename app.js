@@ -21,7 +21,7 @@ app.controller('AppController', ['$scope', '$location', '$rootScope', '$http', '
     $rootScope.allLessonsData = allLessonsData;
   });
 
-  // for setting the body background image to the lightbulb wallpaper
+  // for setting the body background image to the lightbulb wallpaper 
   document.body.classList.remove('no-image')
 }]);
 
