@@ -145,7 +145,8 @@ a:hover {
   font-size: 2em;
   font-weight: 700;
   color: #373733;
-  vertical-align: center;
+  /*margin: 0 auto;*/
+  /*vertical-align: center;*/
 }
 
 #lessonImg {

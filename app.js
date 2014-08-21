@@ -12,8 +12,10 @@ app.controller('AppController', ['$scope', '$location', '$rootScope', '$http', '
     var name = localStorageService.get('name');
     if (name) {
       $scope.go('/lessons');
+      // $scope.hideImage = true;
     } else {
       $scope.go('/user');
+      // $scope.hideImage = false;
     }
   };
   // getting allLessonsData
@@ -45,9 +47,6 @@ app.config(function($routeProvider) {
       controller: 'LessonController'
     })
 });
-
-
-
 
 
 

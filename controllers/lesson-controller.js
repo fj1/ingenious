@@ -3,7 +3,7 @@ app.controller('LessonController', ['$scope', '$http', '$routeParams', '$rootSco
   $scope.$parent.showNavbar = false;
   // $scope.centerText = "text-align: center";
 
-  // background image
+  // replace lightbulb background image
   document.body.classList.add('no-image')
 
   $scope.nextLesson = function() {
