@@ -1,6 +1,6 @@
 Ingenio.us
 
-DataBeast is a demo web application, and one of my senior projects for MakerSquare. It is a teaching tool for providing short algorithm lessons.
+Ingenio.us is a demo web application, and one of my senior projects for MakerSquare. It is a teaching tool for providing short algorithm lessons.
 
 
 Built with:
