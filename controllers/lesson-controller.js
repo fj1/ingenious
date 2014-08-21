@@ -21,7 +21,7 @@ app.controller('LessonController', ['$scope', '$http', '$routeParams', '$rootSco
   }
   $scope.lessonLength = $scope.lessonData.length;
 
-  $http.get('../json_lessons/' + $routeParams.id + '.json', { cache: false }).success(function(lessonData){
+  $http.get('json_lessons/' + $routeParams.id + '.json', { cache: false }).success(function(lessonData){
     $scope.lessons = lessonData;
   });
 }]);
