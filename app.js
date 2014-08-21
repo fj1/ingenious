@@ -19,7 +19,7 @@ app.controller('AppController', ['$scope', '$location', '$rootScope', '$http', '
     }
   };
   // getting allLessonsData
-  $http.get('../json_lessons/all_lessons.json', { cache: false }).success(function(allLessonsData){
+  $http.get('json_lessons/all_lessons.json', { cache: false }).success(function(allLessonsData){
     $rootScope.allLessonsData = allLessonsData;
   });
 
