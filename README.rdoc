@@ -1,0 +1,14 @@
+Ingenio.us
+
+DataBeast is a demo web application, and one of my senior projects for MakerSquare. It is a teaching tool for providing short algorithm lessons.
+
+
+Built with:
+
+
+- Angular
+- JavaScript
+- HTML, CSS
+
+
+Viewable at: francesjurek.com/ingenious/#/
